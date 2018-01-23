@@ -1,0 +1,19 @@
+ # -*- coding: utf-8 -*-
+
+from selenium import webdriver
+import sys 
+
+browser = webdriver.Chrome("chromedriver.exe")
+browser.get("https://reddit.com")
+
+title_text = []
+
+for i in range(3):
+    titles = browser.find_elements_by_css_selector("a.title.outbound")
+    title_text+=  [t.text for t in titles]
+
+    next = browser.find_element_by_css_selector(".next-button")
+    next.click()
+
+for post in title_text
+    print(post.encode(sys.stdout.encoding, errors='replace'))

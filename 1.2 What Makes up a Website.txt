@@ -1,0 +1,64 @@
+EXAMPLE 1:
+
+HTML:
+
+<p id="title">Welcome to my Website</p>
+<p class="info">My name is Charlie.</p>
+<p class="info">I was born in September.</p>
+
+CSS:
+
+p{
+  font-family:arial;
+}
+
+#title{
+  color:red;
+  text-align:center;
+}
+
+.info{
+  font-size:small;
+}
+
+
+
+EXAMPLE 2:
+
+HTML:
+
+<ul class="foo">
+  <li>a</li>
+  <li>b</li>
+  <ul>
+    <li>c</li>
+    <li>d</li>
+  </ul>
+</ul>
+<ul class="bar">
+  <li>e</li>
+  <li>f</li>  
+</ul>
+
+CSS:
+
+/* select all list items */
+li{
+  color:red;
+}
+
+/* select all list items that are descendents of .foo */
+.foo li{
+  text-transform:uppercase;
+}
+
+/* select all list items that are children of .foo */
+.foo > li{
+  font-weight:bold;
+}
+
+/* select every other list item that is a child of .foo */
+.foo > li:nth-child(even){
+  text-decoration:underline;
+}
+

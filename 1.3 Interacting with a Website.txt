@@ -1,0 +1,8 @@
+Navigate to the website: https://github.com/Microsoft/TypeScript/commits/master
+
+In the Console of the Chrome developer tools:
+
+To select all tags of class "message": 		$$(".message")
+To select all tags of class "commit-title":	$$(".commit-title")
+
+To select a tag by x-path: $x('//*[@id="js-repo-pjax-container"]/div[1]/div[2]/nav/span[2]')
